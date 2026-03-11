@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 
 @immutable
 class HomePageState {
+  final Color backgroundColor;
+
   const HomePageState({
     required this.backgroundColor,
   });
-
-  final Color backgroundColor;
 
   HomePageState copyWith({
     Color? backgroundColor,

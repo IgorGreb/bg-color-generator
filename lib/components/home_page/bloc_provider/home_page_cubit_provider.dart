@@ -21,7 +21,7 @@ class HomePageCubitProvider extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider<HomePageCubit>(
-      create: (context) => HomePageCubit(colorGenerator: colorGenerator),
+      create: (_) => HomePageCubit(colorGenerator: colorGenerator),
       child: child,
     );
   }

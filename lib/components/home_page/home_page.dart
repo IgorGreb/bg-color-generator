@@ -6,8 +6,8 @@ import 'package:bg_color_generator/shared/helper/color_generator.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({
+class HomePage extends StatelessWidget {
+  const HomePage({
     super.key,
     this.colorGenerator,
   });

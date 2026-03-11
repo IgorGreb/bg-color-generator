@@ -6,12 +6,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePageCubit extends Cubit<HomePageState> {
+  final ColorGenerator _colorGenerator;
+
   HomePageCubit({
     ColorGenerator? colorGenerator,
   }) : _colorGenerator = colorGenerator ?? ColorGenerator(),
        super(const HomePageState(backgroundColor: Colors.white));
-
-  final ColorGenerator _colorGenerator;
 
   void changeBackgroundColor() {
     final newColor = _colorGenerator.nextColor(avoid: state.backgroundColor);
