@@ -22,7 +22,8 @@ class HomePage extends StatelessWidget {
         builder: (context) {
           return Scaffold(
             body: GestureDetector(
-              onTap: () => context.read<HomePageCubit>().changeBackgroundColor(),
+              onTap: () =>
+                  context.read<HomePageCubit>().changeBackgroundColor(),
               child: Container(
                 color: context.select(
                   (HomePageCubit cubit) => cubit.state.backgroundColor,
